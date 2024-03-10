@@ -20,4 +20,5 @@ const fs = require('fs');
 //     }
 // })
 
-fs.appendFileSync("./text.txt", new Date().getDate().toLocaleString());
+// fs.appendFileSync("./text.txt", new Date().getDate().toLocaleString());
+fs.appendFileSync("./text.txt", `${Date.now()}: User Logged In\n`);
